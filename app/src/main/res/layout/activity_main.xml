@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/Header"
+        android:text="FireBase Database Connectivity">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=" Name : "
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/Header"
+        android:id="@+id/textName">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Header"
+        android:id="@+id/editName"
+        android:layout_toRightOf="@id/textName">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=" Class : "
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/textName"
+        android:id="@+id/textClass">
+    </TextView>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textName"
+        android:id="@+id/editClass"
+        android:layout_toRightOf="@id/textClass">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=" Rno : "
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/textClass"
+        android:id="@+id/textRno">
+    </TextView>
+    <EditText
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editClass"
+        android:id="@+id/editRno"
+        android:layout_toRightOf="@id/textRno">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="ok ❤"
+        android:layout_below="@+id/editRno"
+        android:id="@+id/btnInserted"
+        android:onClick="OnClickEvent"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFB7B7"
+        android:textColor="@color/black"
+        android:text="Show data"
+        android:layout_below="@+id/btnInserted"
+        android:id="@+id/btnShow"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true">
+    </Button>
+</RelativeLayout>
